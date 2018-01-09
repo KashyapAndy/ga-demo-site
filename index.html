@@ -43,16 +43,13 @@
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Projects</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#hobbies">Hobbies</a>
@@ -64,6 +61,7 @@
     <div class="container-fluid p-0">
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+
         <div class="my-auto">
           <h1 class="mb-0">ANIRUDH
             <span class="text-primary">KASHYAP</span>
@@ -75,12 +73,15 @@
           <br>
           <p class="mb-5">I am a data scientist, an engineer and an accomplished project leader with a 7-year proven track record of exceeding customer expectations, engineering products and launching them internationally. I am passionate about using data science to drive business, make better decisions and solve customer problems.</p>
 
-          <br>
-          <h3 class="mb-1">Learning to data science. One iteration at a time.</h3>
+          <h3>Learning to data science. One iteration at a time.</h3>
 
-          <h5> I occassionally write about Data Science: <a href = "https://medium.com/@andykashyap">Here</a>
+          <h5> Occassionally write about Data Science <a href = "https://medium.com/@andykashyap">here</a>
 
+         
           <br>
+          <br>
+
+         <h3 style = "color:#FF9473;">Python | SQL | JMP | Tableau | Numpy | Sklearn | NLP | VBA </h3>
           <br>
 
           <ul class="list-inline list-social-icons mb-0">
@@ -110,6 +111,111 @@
         	</li>
           </ul>
         </div>
+      </section>
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
+    <h2 class="mb-5">Data Science Projects</h2>
+
+    <div class="my-auto">
+          <h3 class="mb-02">Whisky pricing: A dram good case study</h3>
+          <p>
+            <b>In association with TheWhiskyExchange <a href = 'https://www.thewhiskyexchange.com/'>(TWE) </a>
+            </b>
+          <li>
+            Is the price of a whisky right? As a collector and a hobbyist, I set out to explore the factors that affect the price of a whisky. Is it the taste, is it the marketing, is it the looks?
+          </li>
+
+          <li>
+            The challenges in this project were EDA & deductive imputation. Majority of the time was spent filling NaN values, EDA and understading meaning from test
+          </li>
+          <li>Since I needed a model that was interpretable by TWE, I used Logistic Regression as my base model and used GridSearchCV to hyperparameterize it. The end result was excellent and provided insight into the differences between a value brand vs a ultra premium brand. 
+          </li>
+           <li>Finally, with all these recommendations, I was able to conclude that distillery info, vintage, flavors, type of whisky etc are responsible for the price.
+          </li>
+          <li>I also did NLP on the comments to analyze what flavors are people talking about the most in whisky that are rated highest
+          </li>
+          <br>
+          <img src="img/WhiskyNotes.png", width="450" height="390">
+          <br>
+          <br>          
+          <br>
+          <p> <a href = "https://git.generalassemb.ly/AnirudhKashyap/Capstone_Project_AKA/blob/master/TheWhiskyExchange_AKA.pdf"> Link to the presentation </a>
+            <p> <a href = "https://git.generalassemb.ly/AnirudhKashyap/Capstone_Project_AKA "> GitHub </a>
+          </p>
+        </div>
+
+
+        <br>
+        <br>
+        <div class="my-auto">
+          <h3 class="mb-02">KAGGLE PROJECT - PREDICTING WEST NILE VIRUS IN CHICAGO</h3>
+          <p>
+            <b>Data used from the Kaggle competition
+            </b>
+          <li>
+            The goal of this project was estimating the probability of an outbreak of the West Nile Virus by analyzing the number of mosquitos caught inside traps in Chicago
+          </li>
+          <li>
+            The challenges in this project were dealing with unbalanced classes and recommending solutions within a fixed budget.
+          </li>
+          <li>Using GridSearchCV + RandomForest Classification, we were able to estimate probability of a WNV outbreak in each zipcode and integrate that information into cost of spray/mile. 
+          </li>
+           <li>Next, we created a cost/benefit analysis of the spraying in the recommended areas and offering a solution to the city of Chicago
+          </li>
+          <br>
+          <img src="img/spray_agg.png", width="300" height="450">
+          <br>
+          <br>       
+          <br>
+          <p> <a href = "https://docs.google.com/presentation/d/1XciCHnwldMMYHVOfpLaKPwYjVwCiwK1QMfkAhwT7bK4/edit#slide=id.g2866bc657e_1_62"> Link to the presentation </a>
+            <p> <a href = "https://github.com/epidemix/west-nile-virus"> GitHub </a>
+          </p>
+        </div>
+          <br>
+          <br>
+
+        <div class="my-auto">
+          <h3 class="mb-02">MODELING IOWA LIQUOR SALES</h3>
+          <p>
+            <b>The goal of the project was to predict the annual sales of liquor within the state of Iowa using county & store wide data</b>
+          <li>
+            This was my first project handling a dataset with over 2 million entries and using a model to make predictions. For this project, I used a Linear Regression model and used the data from Q1 of 2015 to train the model and predict for 2015 test data.
+          </li>
+          <li>
+            In order to understand the significance of each factor I was able to regularize the model and remove parameters that are not very significant
+          </li>
+          <li>I was then able to use this information and provide information to the Iowa Liquor Board on their tax revenue for the upcoming year
+          </li>
+          <br>
+          <p> <a href = "https://docs.google.com/presentation/d/1WH484qa6EVbZQ3J-faMbVSKieneycL2R1CjTyaILNT8/edit#slide=id.p"> Link to my presentation </a>
+            <p> <a href = "https://docs.google.com/presentation/d/1DBFgIruCPtWGGzc4IUmLi3CZuB5vEa1xobWshRNUUyU/edit#slide=id.g25aa59cfd9_0_382"> GitHub </a>
+          </p>
+          <br>
+          <br>
+        </div>
+
+
+        <div class="my-auto">
+          <h3 class="mb-02">Analyzing Reddit FrontPage</h3>
+          <p>
+            <b>In this project we had to create a model that analyzes what makes a Reddit post successful</b>
+          <li>
+            Using Beautiful soup, I was able to build a scraper that scraped the top 250 pages of reddit every 8 hours and the created a dataset of reddit posts
+          </li>
+          <li>
+            By analyzing the attributes of the reddit post, using NLP on the titles and feature engineering several aspects of a reddit posts, I was able to conclude that the words that are currently in the news/events of the week or holiday words make a reddit post more successful
+          </li>
+          <li>Other conclusions included the fact that reddit posts are generally successful when created by 'power-users'. The models used in this project were RandomForest Classifier and Logistic Regression
+          </li>
+          <br>
+          <p> <a href = "https://docs.google.com/presentation/d/1NIADzPJzVINa1-WENVwAgTB7oTofjyO5znhlZWeqZAg/edit#slide=id.g2f81038c04_2_220"> Link to my presentation </a>
+            <p> <a href = "https://docs.google.com/presentation/d/1DBFgIruCPtWGGzc4IUmLi3CZuB5vEa1xobWshRNUUyU/edit#slide=id.g25aa59cfd9_0_382"> GitHub </a>
+          </p>
+          <br>
+          <br>
+        </div>
+
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
@@ -242,126 +348,23 @@
         </div>
       </section>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
-            <li>
-              Python | SQL | JMP | Tableau</li>
-            <li>
-              Numpy | Sklearn | NLP | VBA</li>          
-        </div>
-      </section>
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h3 class="mb-02">MODELING IOWA LIQUOR SALES</h3>
-          <p>
-            <b>The goal of the project was to predict the annual sales of liquor within the state of Iowa using county & store wide data</b>
-          <li>
-            This was my first project handling a dataset with over 2 million entries and using a model to make predictions. For this project, I used a Linear Regression model and used the data from Q1 of 2015 to train the model and predict for 2015 test data.
-          </li>
-          <li>
-            In order to understand the significance of each factor I was able to regularize the model and remove parameters that are not very significant
-          </li>
-          <li>I was then able to use this information and provide information to the Iowa Liquor Board on their tax revenue for the upcoming year
-          </li>
-          <br>
-          <p> <a href = "https://docs.google.com/presentation/d/1DBFgIruCPtWGGzc4IUmLi3CZuB5vEa1xobWshRNUUyU/edit#slide=id.g25aa59cfd9_0_382"> Link to my presentation </a>
-            <p> <a href = "https://docs.google.com/presentation/d/1DBFgIruCPtWGGzc4IUmLi3CZuB5vEa1xobWshRNUUyU/edit#slide=id.g25aa59cfd9_0_382"> GitHub </a>
-          </p>
-          <br>
-          <br>
-        </div>
-
-         <br>
-        <br>
-
-
-        <div class="my-auto">
-          <h3 class="mb-02">Analyzing Reddit FrontPage</h3>
-          <p>
-            <b>In this project we had to create a model that analyzes what makes a Reddit post successful</b>
-          <li>
-            Using Beautiful soup, I was able to build a scraper that scraped the top 250 pages of reddit every 8 hours and the created a dataset of reddit posts
-          </li>
-          <li>
-            By analyzing the attributes of the reddit post, using NLP on the titles and feature engineering several aspects of a reddit posts, I was able to conclude that the words that are currently in the news/events of the week or holiday words make a reddit post more successful
-          </li>
-          <li>Other conclusions included the fact that reddit posts are generally successful when created by 'power-users'. The models used in this project were RandomForest Classifier and Logistic Regression
-          </li>
-          <br>
-          <p> <a href = "https://docs.google.com/presentation/d/1DBFgIruCPtWGGzc4IUmLi3CZuB5vEa1xobWshRNUUyU/edit#slide=id.g25aa59cfd9_0_382"> Link to my presentation </a>
-            <p> <a href = "https://docs.google.com/presentation/d/1DBFgIruCPtWGGzc4IUmLi3CZuB5vEa1xobWshRNUUyU/edit#slide=id.g25aa59cfd9_0_382"> GitHub </a>
-          </p>
-          <br>
-          <br>
-        </div>
-
-         <br>
-        <br>
-        <div class="my-auto">
-          <h3 class="mb-02">KAGGLE PROJECT - PREDICTING WEST NILE VIRUS IN CHICAGO</h3>
-          <p>
-            <b>Data used from the Kaggle competition
-            </b>
-          <li>
-            The goal of this project was estimating the probability of an outbreak of the West Nile Virus by analyzing the number of mosquitos caught inside traps in Chicago
-          </li>
-          <li>
-            The challenges in this project were dealing with unbalanced classes and recommending solutions within a fixed budget.
-          </li>
-          <li>Using GridSearchCV + RandomForest Classification, we were able to estimate probability of a WNV outbreak in each zipcode and integrate that information into cost of spray/mile. 
-          </li>
-           <li>Next, we created a cost/benefit analysis of the spraying in the recommended areas and offering a solution to the city of Chicago
-          </li>
-          <br>
-          <p> <a href = "https://docs.google.com/presentation/d/1XciCHnwldMMYHVOfpLaKPwYjVwCiwK1QMfkAhwT7bK4/edit#slide=id.g2866bc657e_1_62"> Link to the presentation </a>
-            <p> <a href = "https://github.com/epidemix/west-nile-virus"> GitHub </a>
-          </p>
-        </div>
-
-        <br>
-        <br>
-
-		<div class="my-auto">
-          <h3 class="mb-02">Whisky pricing: A dram good case study</h3>
-          <p>
-            <b>In association with TheWhiskyExchange <a href = 'https://www.thewhiskyexchange.com/'>(TWE) </a>
-            </b>
-          <li>
-            Is the price of a whisky right? As a collector and a hobbyist, I set out to explore the factors that affect the price of a whisky. Is it the taste, is it the marketing, is it the looks?
-          </li>
-          <li>
-            The challenges in this project were EDA & deductive imputation. Majority of the time was spent filling NaN values, EDA and understading meaning from test
-          </li>
-          <li>Since I needed a model that was interpretable by TWE, I used Logistic Regression as my base model and used GridSearchCV to hyperparameterize it. The end result was excellent and provided insight into the differences between a value brand vs a ultra premium brand. 
-          </li>
-           <li>Finally, with all these recommendations, I was able to conclude that distillery info, vintage, flavors, type of whisky etc are responsible for the price.
-          </li>
-          <br>
-          <p> <a href = "https://git.generalassemb.ly/AnirudhKashyap/Capstone_Project_AKA/blob/master/TheWhiskyExchange_AKA.pdf"> Link to the presentation </a>
-            <p> <a href = "https://git.generalassemb.ly/AnirudhKashyap/Capstone_Project_AKA	"> GitHub </a>
-          </p>
-        </div>
-
-
-
-
-      </section>
-
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="hobbies">
         <div class="my-auto">
           <h2 class="mb-5">Hobbies</h2>
-            <li>
-              Data science</li>
-            <li>
-              Collecting Whisky</li>
-            <li>
-              Learning new skills</li>
-            <li>
-              Snowboarding</li>
-            <li>
-              Staying fit</li>
+             <h4><li>
+              Data science</h4></li>
+            <h4><li>
+              Collecting Whisky</h4></li>
+            <h4><li>
+              Learning New Skills</h4></li>
+            <h4><li>
+              Snow boarding</h4></li>
+              <br>
+              <img src="img/Snowboarding.jpg", width="500" height="377">
+              <br>
+              <br>
+            <h4><li>
+              Staying Fit</h4></li>
         </div>
       </section>
 
